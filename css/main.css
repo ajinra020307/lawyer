@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Josefin+Sans&display=swap');
+*{
+	font-family: "Josefin Sans";
+	line-height: 1.6
+}
+body,p{
+	margin: 0;
+	padding: 0;
+	line-height: 1.6
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.container{
+	width: 90%;
+	margin: auto;
+}
+/*header*/
+header{
+	background-color: #225067;
+}
+header .container{
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	width: 90%;
+	margin: auto;
+	padding: 10px 0;
+}
+
+.web_title img{
+	height: 50px;
+	width: auto;
+	margin-right: 7px;
+}
+.web_title span{
+	font-size: 30px;
+	color: #ebffff;
+	align-self: flex-end;
+	line-height: 0.9
+}
+.web_title{
+	display: flex;
+	align-items: flex-end;
+}
+.top_nav{
+	display: flex;
+	justify-content: space-between;
+	align-items:flex-end;
+}
+
+.top_nav a{
+	
+	font-size: 17px;
+	color: #ebffff;
+}
+.top span{
+	
+	font-family: "Bree Serif";
+	color: white;
+}
+
+/*showcase*/
+
+.showcase{
+   background-image: url(../img/c.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   min-height: 46vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+.top{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	font-size: 50px;
+	color: #ebffff;
+	font-weight: bolder;
+}
+.top button{
+	width: 230px;
+	height: 50px;
+	border:none;
+	background-color: rgba(0,0,0,0.8);
+	font-size: 20px;
+	border-radius: 10px;
+	color: white;
+
+}
+.top button:hover{
+	background-color: rgba(0,0,0,0.3);
+	box-shadow: inset 10px 10px 10px black,10px 10px 10px black;
+	border:1px solid grey;
+}
+
+
+.showcontainer{
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+	
+}
+.showcontainer div{
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	font-size: 22px;
+	color: white;
+	background-color: #225067;
+	width: 200px;
+	height: 80px;
+	border-bottom: 7px solid gold;
+
+}
+
+/*top-rated*/
+
+.toprated_lawyers{
+	margin-top:60px; 
+}
+.toprated_lawyers .container{
+    display: flex;
+    flex-direction: column;
+}
+.toprated_lawyers .container .content{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.toprated_lawyers .container .content img{
+	height: 300px;
+}
+.details{
+	display: flex;
+	flex-direction: column;
+	
+}
+.detailinner{
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+	line-height: 30px;
+}
+.topratedtitlemain{
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.topratedtitle{
+	font-weight: lighter;
+}
+.toprated_lawyers .button button{
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	background: cornflowerblue;
+	color: white;
+	border:none;
+	transition-duration: 0.8s;
+	transition-property: all;
+}
+.toprated_lawyers .button button:hover{
+   background: tomato;
+}
+.toprated_lawyers .container .content > div{
+	background-color:#f2f2f2;
+	padding: 20px;
+	border:1px solid grey;
+}
+/*newsletter*/
+.newsletter{
+	background-color: #225067;
+	color: white;
+	padding: 50px;
+	margin-top: 50px;
+	font-size: 30px;
+	text-align: center;
+}
+.newsletter input{
+	width: 400px;
+	height: 40px;
+	font-size: 20px;
+}
+.newsletter button{
+	width: 200px;
+	height: 40px;
+	font-size: 20px;
+	border:none;
+	background: white;
+	transition-duration: 0.8s;
+	transition-property: all;
+}
+.newsletter button:hover{
+	background: red;
+	color: white;
+}
+/*latest answers*/
+.latest_answers{
+	background-color: #f2f2f2;
+	margin: 0 auto 0 auto;
+	padding: 80px;
+}
+.latest_answers .container{
+	width: 80%;	
+	display: flex;
+	flex-direction: column;
+}
+.latestanswerstitlemain{
+	display: flex;
+	flex-direction: column;
+	font-size: 40px;
+	align-items: center;
+	font-weight: lighter;
+	color: rgba(0,0,0,0.7);
+}
+.latestanswerstitlemain span:nth-child(2){
+	font-size: 25px;
+}
+.latest_answers .content{
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-column-gap: 20px;
+}
+.question{
+	font-size: 28px;
+	padding-bottom: 20px;
+	color: rgba(0,0,0,0.7);
+}
+.answer{
+	font-size: 20px;
+	color:rgba(0,0,0,0.7);
+}
+.answer a{
+	color: black;
+	text-decoration: underline;
+}
+
+.latest_answers  button{
+	width: 300px;
+	height: 50px;
+	font-size: 20px;
+	background: cornflowerblue;
+	color: white;
+	border:none;
+	margin-top: 10px;
+	transition-duration: 0.8s;
+	transition-property: all;
+}
+.latest_answers  button:hover{
+	background: transparent;
+	color: cornflowerblue;
+	border:2px solid cornflowerblue;
+}
+#btn2{
+	background: transparent;
+	color: cornflowerblue;
+	border:2px solid cornflowerblue;
+}
+#btn2:hover{
+	background-color: cornflowerblue;
+	color: white
+}
+
+/*how it works*/
+.howitworks .container > div{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.howitworks .container{
+	width: 80%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  align-items: center;
+}
+.howitworks .container img{
+	height: 200px;
+}
+.howitworks{
+	margin: 100px 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.howitworks > span{
+	font-size: 40px;
+	font-weight: bold;
+	color: rgba(0,0,0,0.5);
+	padding-bottom: 40px;
+}
+.howitworks .container span{
+	padding-top: 10px;
+	color: rgba(0,0,0,0.7);
+
+}
+.howitworks button{
+	width: 300px;
+	height: 50px;
+	font-size: 22px;
+	background: cornflowerblue;
+	color: white;
+	border:1px solid grey;
+	margin: auto;
+	transition-duration: 0.8s;
+	transition-property: all;
+	margin-top: 30px;
+}
+.howitworks button:hover{
+	background: lightblue;
+	color: black
+}
+/*banner*/
+ .banner{
+	background-color: #225067;
+ 	color: white;
+    padding: 40px 0;
+ }
+ .banner .container{
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ 	justify-content: center;
+ 	font-size: 43px;
+ }
+ .two{
+ 	font-size: 20px;
+ }
+ .banner button{
+ 	width: 200px;
+ 	height: 40px;
+ 	border:none;
+ 	background: cornflowerblue;
+ 	transition-duration: 0.7s;
+ 	transition-property: all;
+ 	color: white;
+ 	font-size: 20px;
+ 	margin-top: 10px;
+ }
+ .banner button:hover{
+ 	background: white;
+ 	color: black;
+ 	border:2px solid cornflowerblue;
+
+ }
+/*findlawyers*/
+.findlawyers{
+	background-color: #f2f2f2;
+	padding: 40px 0 40px 40px;
+}
+.findlawyers_Title{
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	color: rgba(0,0,0,0.7);
+}
+.findlawyers .container{
+	display: flex;
+	flex-direction: column;
+
+
+}
+.findlawyers .options span{
+	width: 30%;
+	font-size: 26px;
+	padding-top: 30px;
+	border-bottom: 1px solid grey;
+	margin-right: 20px;
+	color: rgba(0,0,0,0.7);
+	cursor: pointer;
+}
+.findlawyers .options span:hover{
+	border-bottom: 2px solid black
+}
+.findlawyers .options{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border-left: 10px solid #2d6b5e;
+}
+/*footer_content*/
+footer{
+	color: rgba(255,255,255,0.7);
+	padding-top: 30px;
+	background-color: #252525;
+	padding-bottom: 30px;
+}
+footer a{
+	color: rgba(255,255,255,0.7);
+	line-height: 35px;
+}
+footer .container{
+	width: 70%;
+	
+}
+footer h4, footer h3{
+	color: #1fe4f8;
+
+}
+.footer_content{
+	display: flex;
+	justify-content: space-between;
+	border-bottom:1px solid white;
+}
+.footer_content >div{
+	display: flex;
+	flex-direction: column;
+}
+.social{
+	display: flex;
+	align-self: flex-end;
+
+}
+.copyright{
+	display: flex;
+	justify-content: space-between;
+}
+.social div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-right:20px;
+}
+.social div:nth-child(3){
+	margin: 0
+}
+.social svg{
+	height: 40px;
+	transition-duration: 0.5s;
+	transition-property: all;
+}
+.social div:nth-child(1) svg{
+	fill: cornflowerblue;
+}
+.social div:nth-child(2) svg{
+	fill: pink;
+}
+.social div:nth-child(3) svg{
+	fill: tomato;
+}
+.social svg:hover{
+	transform: rotate(25deg);
+}
