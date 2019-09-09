@@ -10,7 +10,8 @@ body,p{
 }
 a{
 	text-decoration: none;
-	color: black;
+	color: white;
+	
 }
 .container{
 	width: 90%;
@@ -33,7 +34,7 @@ header .container{
 	width: auto;
 	margin-right: 7px;
 }
-.web_title span{
+.web_title a{
 	font-size: 30px;
 	color: #ebffff;
 	align-self: flex-end;
@@ -61,8 +62,8 @@ header .container{
 }
 /*showcase*/
 .showcase{
-	min-height: 90vh;
-	background-image: url(../img/lc.jpg);
+	min-height: 70vh;
+	background-image: url(../img/servicec.jpg);
 	background-size: cover;
 	display: flex;
 	align-items: center;
