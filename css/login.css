@@ -26,7 +26,7 @@ header{
 }
 header .container{
 	display: grid;
-	grid-template-columns: 2fr 3fr;
+	grid-template-columns: 3fr 3fr;
 	width: 90%;
 	margin: auto;
 	padding: 10px 0;

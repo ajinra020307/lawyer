@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Josefin+Sans&display=swap');
+
+*{
+	font-family: "Josefin Sans";
+	line-height: 1.6;
+    scroll-behavior: smooth;
+}
+body,p{
+	margin: 0;
+	padding: 0;
+	line-height: 1.6
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.container{
+	width: 90%;
+	margin: auto;
+}
+/*header*/
+header{
+	background-color: #225067;
+}
+header .container{
+	display: grid;
+	grid-template-columns: 3fr 3fr;
+	width: 90%;
+	margin: auto;
+	padding: 10px 0;
+}
+
+.web_title img{
+	height: 50px;
+	width: auto;
+	margin-right: 7px;
+}
+.web_title a{
+	font-size: 30px;
+	color: #ebffff;
+	align-self: flex-end;
+	line-height: 0.9
+}
+.web_title{
+	display: flex;
+	align-items: flex-end;
+}
+.top_nav{
+	display: flex;
+	justify-content: space-between;
+	align-items:flex-end;
+}
+
+.top_nav a{
+	
+	font-size: 17px;
+	color: #ebffff;
+}
+.top span{
+	
+	font-family: "Bree Serif";
+	color: white;
+}
+.movetop{
+    position: fixed;
+    z-index: 100;
+    right: 30px;
+    top:50%;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    display: none
+}
+@keyframes blink{
+    0%{
+        transform: scale(1)
+    }
+    50%{
+        transform: scale(1.1)
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+.movetop svg{
+    height: 50px;
+    background: tomato;
+    border-radius: 50%;
+    padding: 10px;
+    fill:green;
+}
+/*showcase*/
+.showcase{
+    min-height: 90vh;
+    background-image: url('../img/map.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    display: flex;
+    align-items: center;
+}
+.showcase_content{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 40px;
+    margin-right: 40px;
+}
+.showcase_content .showbuttons{
+    display: flex;
+    flex-direction: column;
+}
+.showcase_content p{  
+    text-align: center;
+    margin: 0;
+    padding-bottom: 40px;  
+    padding-right: 20px;
+}
+.showbuttons button{
+    border:none;
+    width: 400px;
+    height: 55px;
+    font-size: 20px;
+    padding: 12px 0;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    
+
+	color: white;
+	background: linear-gradient(-45deg, #ee7752,   #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*findbystate*/
+.findbystate{
+    min-height: 100vh;
+    font-size: 30px;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.findbystate_content{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   position: relative
+}
+.findbystate_content div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 50%;
+}
+.findbystate_content img{
+    width:100%;
+}
+.findbystate_content select{
+    height: 45px;
+    font-size: 20px;
+    text-align: center;
+    width: 500px;
+}
+.findbystate_content button{
+    height: 50px;
+    width: 500px;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+	background: linear-gradient(-45deg, #ee7752,   #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientBG 10s ease infinite;
+}
+.title{
+    position: absolute;
+    top: 8%;
+    font-size: 40px;
+}
+
+/*findbycase*/
+.findbycase{
+    min-height: 100vh;
+    font-size: 30px;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.findbycase_content{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   position: relative
+}
+.findbycase_content div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 50%;
+}
+.findbycase_content img{
+    width:100%;
+}
+.findbycase_content select{
+    height: 45px;
+    font-size: 20px;
+    text-align: center;
+    width: 500px;
+}
+.findbycase_content button{
+    height: 50px;
+    width: 500px;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+	background: linear-gradient(-45deg, #ee7752,   #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientBG 10s ease infinite;
+}
+/*top-rated*/
+.findtoprated{
+    min-height: 100vh;
+    padding-top: 30px;
+    background: #f2f2f2;
+    text-align: center;
+}
+.findtoprated .container > span{
+    font-size: 30px;
+}
+.content{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+.content div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background:white;
+    padding: 10px 0;
+}
+
+.content div img{
+    margin:auto;
+    width: 180px;
+}
+.content div button{
+    width: 100px;
+    background: cornflowerblue;
+    border:none;
+    color:white;
+    border-radius: 20px;
+    margin:auto;
+}
+/*footer_content*/
+footer{
+	color: rgba(255,255,255,0.7);
+	padding-top: 30px;
+	background-color: #252525;
+	padding-bottom: 30px;
+}
+footer a{
+	color: rgba(255,255,255,0.7);
+	line-height: 35px;
+}
+footer .container{
+	width: 70%;
+	
+}
+footer h4, footer h3{
+	color: #1fe4f8;
+
+}
+.footer_content{
+	display: flex;
+	justify-content: space-between;
+	border-bottom:1px solid white;
+}
+.footer_content >div{
+	display: flex;
+	flex-direction: column;
+}
+.social{
+	display: flex;
+	align-self: flex-end;
+
+}
+.copyright{
+	display: flex;
+	justify-content: space-between;
+}
+.social div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-right:20px;
+}
+.social div:nth-child(3){
+	margin: 0
+}
+.social svg{
+	height: 40px;
+	transition-duration: 0.5s;
+	transition-property: all;
+}
+.social div:nth-child(1) svg{
+	fill: cornflowerblue;
+}
+.social div:nth-child(2) svg{
+	fill: pink;
+}
+.social div:nth-child(3) svg{
+	fill: tomato;
+}
+.social svg:hover{
+	transform: rotate(25deg);
+}

@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Josefin+Sans&display=swap');
 *{
 	font-family: "Josefin Sans";
 	line-height: 1.6
-}
-body{
-	background: #f2f2f2;
 }
 body,p{
 	margin: 0;
@@ -14,7 +10,6 @@ body,p{
 a{
 	text-decoration: none;
 	color: white;
-	
 }
 .container{
 	width: 90%;
@@ -63,96 +58,77 @@ header .container{
 	font-family: "Bree Serif";
 	color: white;
 }
-/*contact*/
-.contact{
-	min-height: 90vh;
-	display: flex;
-	justify-content: center;
-}
-.contact_content{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-.contact_content form{
-	display: flex;
-	flex-direction: column;
-	width: 70%;
-    justify-content: center;
+/*ask questions*/
+.askquestions{
+      min-height: 600px;
+    display: flex;
     align-items: center;
-    background:white;
-    padding: 30px 20px;
-    box-shadow: 1px 1px 2px grey,inset 1px 1px 2px grey;
-}
-.contact_content form input{
-	height: 45px;
-	font-size: 20px;
-	
-	margin-bottom: 30px;
-	width: 100%;
-}
-.contact_content form select{
-	text-align: center;
-	font-size: 20px;
-	height: 45px;	
-	margin-bottom: 30px;
-	width: 100%;
+    justify-content: center;
+    background: url(../img/questions.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
     
 }
-.contact_content form textarea{
-	height: 200px;
-	font-size: 20px;
-	margin-bottom: 20px;
-	resize: none;
-	
-	border-width: 1px;
-	width: 100%;
-
+.askquestions form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left:auto;
+    font-size: 30px;
+    background: rgba(0,0,0,0.1);
+    padding:60px 30px;
+  
 }
-.contact_content form button{
-	height: 40px;
-	border:none;
-	background-color: #225067;
-	font-size: 20px;
-	color: white;
-	width: 100%;
-
+.askquestions form span{
+    padding-bottom: 30px;
+    color: rgba(0,0,0,0.7)
 }
-.contact_content form span{
-	font-size: 30px;
-	padding-bottom: 30px;
-	color: rgba(0,0,0,0.8);
+.askquestions form input{
+    height: 45px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    border:none;
+    border-bottom: 1px solid grey;
 }
-
-.right{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-    padding-left: 30px;
-    align-content: center;
+.askquestions form button{
+    height: 45px;
+    font-size: 20px;
+    border: none;
+    background: cornflowerblue;
+    color:white;
+}
+/*faq*/
+.faq{
+    background: #f2f2f2;
+    padding: 50px 0;
+    font-size: 50px;
+}
+.faq p{
+    padding-bottom: 30px;
     text-align: center;
-    grid-gap: 50px;
+    color: rgba(0,0,0,0.7)
 }
-.right > div{
-	transition:0.7s all ease;
+.faq_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
 }
-
-.right div:nth-child(3){
-	grid-row: 2/3;
-	grid-column: 1/3;
+.faq_content > div{
+    background: white;
+    padding: 10px;
 }
-.right div span{
-	font-size: 20px;
+.question{
+	font-size: 24px;
+	padding-bottom: 20px;
+	color: rgba(0,0,0,0.7);
 }
-.right svg{
-	height: 60px;
+.question svg{
+    fill:tomato;
 }
-.right div:nth-child(3) svg{
-	fill: green
-}
-.right div:nth-child(2) svg{
-	fill: cornflowerblue;
-}
-.right div:nth-child(1) svg{
-	fill: tomato;
+.answer{
+	font-size: 17px;
+	color:rgba(0,0,0,0.7);
+    padding-left: 30px;
 }
 /*footer_content*/
 footer{
